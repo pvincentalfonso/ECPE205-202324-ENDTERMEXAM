@@ -13,7 +13,7 @@ public class MainFrame extends JFrame {
     }
 
     private void init() {
-//        JPanel panel = new JPanel(new FlowLayout(FlowLayout.RIGHT));
+//        JPanel panel = new JPanel(new FlowLayout(FlowLayout.RIGHT))
 
         Container container = this.getContentPane();
         studentsPanel = new StudentsPanel();
