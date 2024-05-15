@@ -22,8 +22,8 @@ public class MainFrame extends JFrame {
         enrolleesTable = new JTable(enrolledTableModel);
 
         container.setLayout(new BorderLayout());
-        container.add(studentsPanel, BorderLayout.EAST);
-        container.add(coursePanel, BorderLayout.WEST);
+        container.add(studentsPanel, BorderLayout.WEST);
+        container.add(coursePanel, BorderLayout.EAST);
         container.add(enrolleesTable, BorderLayout.SOUTH);
 
 
