@@ -6,17 +6,18 @@ public class MainFrame extends JFrame {
     JTable enrolleesTable;
     EnrolledTableModel enrolledTableModel;
     JButton enrollButton;
+    TestFrames testFrames;
 
     public MainFrame() {
         init();
     }
 
     private void init() {
-        studentsPanel = new StudentsPanel();
+//        this.add(studentsPanel = new StudentsPanel());
         coursePanel = new CoursePanel();
         enrolledTableModel = new EnrolledTableModel();
         enrolleesTable = new JTable(enrolledTableModel);
-
+        this.add(testFrames = new TestFrames());
 
 
 
