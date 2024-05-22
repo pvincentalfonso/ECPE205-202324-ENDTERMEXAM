@@ -41,7 +41,7 @@ public class TestFrames extends JPanel {
         c.gridwidth = gridWidth;
         c.gridheight = gridHeight;
         c.weightx = 1;
-        c.weighty = 1;
+        c.weighty = 10;
         c.fill = GridBagConstraints.BOTH;
         c.insets = new Insets(5, 5, 5, 5);
 
@@ -54,7 +54,7 @@ public class TestFrames extends JPanel {
         c.gridwidth = gridWidth;
         c.gridheight = gridHeight;
         c.weightx = 1;
-        c.weighty = 1;
+        c.weighty = 10;
         c.insets = new Insets(5, 5, 5, 5);
     }
 }
