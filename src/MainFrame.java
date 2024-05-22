@@ -6,31 +6,34 @@ public class MainFrame extends JFrame {
     CoursePanel coursePanel;
     JTable enrolleesTable;
     EnrolledTableModel enrolledTableModel;
-    JButton enrollButton;
 
+    TestFrames testFrames;
     public MainFrame() {
         init();
     }
 
     private void init() {
-//        JPanel panel = new JPanel(new FlowLayout(FlowLayout.RIGHT))
 
         Container container = this.getContentPane();
         studentsPanel = new StudentsPanel();
         coursePanel = new CoursePanel();
         enrolledTableModel = new EnrolledTableModel();
         enrolleesTable = new JTable(enrolledTableModel);
+        testFrames = new TestFrames();
 
         container.setLayout(new BorderLayout());
         container.add(studentsPanel, BorderLayout.WEST);
         container.add(coursePanel, BorderLayout.EAST);
         container.add(enrolleesTable, BorderLayout.SOUTH);
+        container.add(testFrames, BorderLayout.SOUTH);
 
 
         setVisible(true);
-        setTitle("wawewe");
         setTitle("GUI");
         pack();
         setDefaultCloseOperation(EXIT_ON_CLOSE);
+
     }
+
+
 }
