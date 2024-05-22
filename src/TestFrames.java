@@ -6,7 +6,10 @@ import java.awt.event.ActionListener;
 
 public class TestFrames extends JPanel {
 
+
     JButton enrollButton;
+
+    JButton addButton;
     JTable table;
     JScrollPane scrollPane;
     DefaultTableModel tableModel;
@@ -25,10 +28,15 @@ public class TestFrames extends JPanel {
 
         adds(0, 0, 1, 1, c);
         this.add(enrollButton = new JButton("ENROLL"), c);
+        tableModel = new DefaultTableModel(nameColumn2, 0);
+
+        adds(0, 0, 1, 1, c);
+        this.add(addButton = new JButton("Add"), c);
 
         add(0, 2, 2, 1, c);
         this.add(table = new JTable(tableModel), c);
 
+        c.weighty = 10;
         scrollPane = new JScrollPane(table);
         this.add(scrollPane, c);
 
@@ -42,6 +50,7 @@ public class TestFrames extends JPanel {
         c.gridheight = gridHeight;
         c.weightx = 1;
         c.weighty = 1;
+        c.weighty = 10;
         c.fill = GridBagConstraints.BOTH;
         c.insets = new Insets(5, 5, 5, 5);
 
